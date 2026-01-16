@@ -128,3 +128,20 @@ go vet and gofmt pass with no issues.
 - All 14 tests passing
 - Linting passes (go vet, gofmt)
 - Marked task as complete in PRD.md
+
+## 2026-01-16: Mark DELETE /tasks/{id} endpoint as complete
+
+### Completed
+- Verified DELETE /tasks/{id} endpoint implementation in main.go (deleteTask method, lines 173-180)
+- Endpoint extracts task ID from URL path and deletes the task from the store
+- Returns 204 No Content on successful deletion
+- Returns 404 Not Found with error JSON when task doesn't exist
+- Confirmed existing tests cover this endpoint:
+  - TestServerDeleteTask: successfully deletes task and returns 204
+  - TestServerDeleteTaskNotFound: returns 404 for non-existent task
+- All 14 tests passing
+- Linting passes (go vet, gofmt)
+- Marked task as complete in PRD.md
+
+### All PRD Tasks Complete
+All 5 tasks in the PRD have been implemented and verified.

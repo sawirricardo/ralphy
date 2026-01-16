@@ -31,7 +31,7 @@ type Task struct {
 - [x] Create GET /tasks endpoint that returns a list of all tasks as JSON
 - [x] Create POST /tasks endpoint that accepts JSON body to create a new task and returns the created task
 - [x] Create GET /tasks/{id} endpoint that returns a single task by ID or 404 if not found
-- [ ] Create DELETE /tasks/{id} endpoint that deletes a task by ID and returns 204 No Content on success
+- [x] Create DELETE /tasks/{id} endpoint that deletes a task by ID and returns 204 No Content on success
 
 ## Technical Requirements
 
